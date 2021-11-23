@@ -27,7 +27,7 @@ body {
   text-align: center;
   background-color: red;
   border: none;
-  border-radius: 1rem;
+  border-radius: 2rem;
   box-shadow: var(--box-shadow);
   padding: var(--padding);
 }
@@ -41,7 +41,7 @@ body {
 }
 
 .input {
-  position: relative;
+  
   text-align: center;
   padding: var(--padding);
   
@@ -49,12 +49,21 @@ body {
 .click-below {
     text-align: center;
     font-size: 10rem;
-    padding-bottom: 10rem;
+    padding: var(--padding);
+    /* border: none;
+  border-radius: 2rem;
+  box-shadow: var(--box-shadow);
+  background-color: red; */
     
 }
 
+.anchor {
+  padding: var(--padding);
+}
+
 .btn {
-    
+  padding: var(--padding);
+ 
 }
 
 .btn:hover{
@@ -66,14 +75,12 @@ body {
 }  
 
 .image {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: auto;
-  transform: translate(-50%);
+  margin: 0 auto;
   border-radius: 50rem;
   box-shadow: var(--box-shadow);
   width: 40rem;
+  transition: all 0.4s ease;
+  
   
   
 
@@ -81,6 +88,6 @@ body {
 
 .image:hover {
   transform: scale(1.05) translateY(-0.5rem);
-  box-shadow: 0 3rem 4rem rgba(0, 0, 0, 0.4);
+  box-shadow: 0 3rem 4rem rgba(0, 0, 0, 0.9);
   transition: all 0.4s ease;
 }
