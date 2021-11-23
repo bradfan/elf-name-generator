@@ -3,14 +3,69 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; 
+  box-sizing: inherit;
+}
+
+:root {
+    --box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.4);
+    --padding: 1rem;
 }
 
 html {
-  font-size: 62.5%; 
+  font-size: 62.5%;
   /* sets 1rem to 10px */
+  font-family: Mountains of Christmas;
 }
 
 body {
-  box-sizing: border-box; 
+  background-color: green;
+  box-sizing: border-box;
+  padding: var(--padding);
+}
+
+.header {
+  
+  text-align: center;
+  background-color: red;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: var(--box-shadow);
+  padding: var(--padding);
+  
+  
+}
+
+.title {
+  
+  font-size: 10rem;
+ 
+}
+
+.main {
+    padding: var(--padding);
+    position: relative;
+    
+
+}
+
+.input {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  
+  margin: auto;
+  transform: translate(-50%);
+
+}
+
+.btn {
+
+}
+.btn-animated {
+
+}
+
+.image {
+    border-radius:50rem;
+    box-shadow: var(--box-shadow);
 }
