@@ -7,8 +7,8 @@
 }
 
 :root {
-    --box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.4);
-    --padding: 1rem;
+  --box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.4);
+  --padding: 1rem;
 }
 
 html {
@@ -24,48 +24,63 @@ body {
 }
 
 .header {
-  
   text-align: center;
   background-color: red;
   border: none;
   border-radius: 1rem;
   box-shadow: var(--box-shadow);
   padding: var(--padding);
-  
-  
 }
 
 .title {
-  
   font-size: 10rem;
- 
 }
 
 .main {
-    padding: var(--padding);
-    position: relative;
-    
-
+  padding: var(--padding);
 }
 
 .input {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  position: relative;
+  text-align: center;
+  padding: var(--padding);
   
-  margin: auto;
-  transform: translate(-50%);
-
+}
+.click-below {
+    text-align: center;
+    font-size: 10rem;
+    padding-bottom: 10rem;
+    
 }
 
 .btn {
-
+    
 }
-.btn-animated {
 
+.btn:hover{
+    
 }
+
+ .btn-animated {
+     
+}  
 
 .image {
-    border-radius:50rem;
-    box-shadow: var(--box-shadow);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: auto;
+  transform: translate(-50%);
+  border-radius: 50rem;
+  box-shadow: var(--box-shadow);
+  width: 40rem;
+  
+  
+
+}
+
+.image:hover {
+  transform: scale(1.05) translateY(-0.5rem);
+  box-shadow: 0 3rem 4rem rgba(0, 0, 0, 0.4);
+  transition: all 0.4s ease;
 }
