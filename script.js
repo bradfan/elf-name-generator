@@ -5,7 +5,7 @@ const middleNames = ['Glitter', 'Twinkle', 'Sugar', 'Sleigh', "Mc", 'Icy', 'Cinn
 const lastNames = ['balls', 'nose', 'frown', 'pants', 'shorts', 'toes', 'drawers', 'shoes', 'bum', 'bells', 'jingles', 'nut', 'berries', 'muggins', 'hair', 'giggles', 'bottoms', 'socks',];
 
 const caption = document.getElementById('image-container');
-
+const startOver = document.getElementById('refresh');
 
 document.querySelector('.image').addEventListener('click', function() {
   const removeTitle = document.getElementById('title');
@@ -21,8 +21,8 @@ document.querySelector('.image').addEventListener('click', function() {
   elfName.setAttribute('class', 'elf-name');
   elfName.innerHTML = `Merry Christmas <br>"${firstNames[randomFirstName()]} ${middleNames[randomMiddleName()]}${lastNames[randomLastName()]}!!"`
   caption.append(elfName);
-  
-  
+  let showBtn = document.getElementById('new-btn');
+  showBtn.classList.remove('hidden');
 })
 
 
