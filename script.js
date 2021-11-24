@@ -24,7 +24,8 @@ document.querySelector('.image').addEventListener('click', function() {
   showFooter.classList.remove('hidden');
   let removeInput = document.getElementById('input');
   removeInput.remove();
-  
+  let showImage = document.getElementById('image-container');
+  showImage.classList.remove('hidden');
   
   
 })

@@ -109,3 +109,20 @@ body {
 .hidden {
   opacity: 0;
 }
+
+.image-container {
+  overflow: hidden;
+  border: none;
+  border-radius: 40rem; 
+}
+
+.christmas-tree {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  
+  
+}
