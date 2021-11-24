@@ -91,3 +91,7 @@ body {
   box-shadow: 0 3rem 4rem rgba(0, 0, 0, 0.9);
   transition: all 0.4s ease;
 }
+
+.elf-name {
+  font-size: 10rem;
+}
