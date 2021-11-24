@@ -22,6 +22,9 @@ document.querySelector('.image').addEventListener('click', function() {
   hideTitle.setAttribute("class", "banner");
   let showFooter = document.getElementById('footer');
   showFooter.classList.remove('hidden');
+  let removeInput = document.getElementById('input');
+  removeInput.remove();
+  
   
   
 })

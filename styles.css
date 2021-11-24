@@ -24,13 +24,14 @@ body {
 }
 
 .banner {
+  
   text-align: center;
   font-size: 10rem;
   background-color: red;
   border: none;
   border-radius: 2rem;
   box-shadow: var(--box-shadow);
-  padding: var(--padding);
+  /* padding: var(--padding); */
 }
 
 /* .title {
@@ -39,6 +40,7 @@ body {
 
 .main {
   padding: var(--padding);
+  position: relative;
 }
 
 .input {
@@ -96,6 +98,11 @@ body {
 }
 
 .footer {
+  width: 100%;
+  position: absolute;
+  top:100%;
+  
+  /* margin-top: 5rem; */
   
 }
 
