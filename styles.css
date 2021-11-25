@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+  font-family: Mountains of Christmas;
 }
 
 :root {
@@ -31,7 +32,7 @@ body {
   width: 100%;
   text-align: center;
   font-size: clamp(2rem, 7vmin, 10rem);
-  background-color: red;
+  background-color:red;
   border: none;
   border-radius: 2rem;
   box-shadow: var(--box-shadow);
@@ -45,6 +46,12 @@ body {
 .main {
   padding: var(--padding);
   position: relative;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(44, 128, 44, 0.5),
+      rgba(41, 235, 12, 0.5));
+  box-shadow: var(--box-shadow);
+  border-radius: 2rem;
 }
 
 .input {
@@ -60,11 +67,8 @@ body {
 
 .anchor {
   padding: var(--padding);
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center; */
+  position: relative;
+  
 }
 
 .btn {
@@ -85,9 +89,25 @@ body {
   transition: all 0.4s ease;
 }
 
+.click-me {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  color: white;
+  text-transform: uppercase;
+  font-size: clamp(.75rem, 7vmin, 2rem);
+  text-align: center;
+  transition: all .5s;
+  backface-visibility: hidden;
+  filter:brightness(200%)
+}
+
+
 .image:hover {
   transform: scale(1.05) translateY(-0.5rem);
   box-shadow: 0 3rem 4rem rgba(0, 0, 0, 0.9);
+  filter: blur(.05rem) brightness(95%);
   transition: all 0.4s ease;
 }
 
@@ -102,11 +122,12 @@ body {
 }
 
 .image-container {
+  /* background-image: url(images/christmas-tree.jpg); */
   overflow: hidden;
   border: none;
   position: relative;
   box-shadow: var(--box-shadow);
-  border-radius: 1rem;
+  border-radius: 50rem;
 }
 
 .christmas-tree {
@@ -116,4 +137,30 @@ body {
   object-position: center;
   background-repeat: no-repeat;
   object-fit: cover;
+}
+
+.refresh {
+  padding: var(--padding);
+  text-align: center;
+  margin-top:1rem;
+}
+.btn-refresh {
+  text-align: center;
+  padding: var(--padding);
+  width:40%;
+  border: none;
+  border-radius:.5rem;
+  font-weight: 600;
+  font-size: clamp(.25rem, 7vmin, 2rem);
+  background-color: red;
+  box-shadow: var(--box-shadow);
+  transition: all 0.4s ease;
+  text-transform: capitalize;
+}
+
+.btn-refresh:hover {
+  transform: scale(1.05) translateY(-0.5rem);
+  box-shadow: 0 3rem 4rem rgba(0, 0, 0, 0.9);
+  transition: all 0.4s ease;
+  
 }
