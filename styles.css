@@ -32,7 +32,11 @@ body {
   width: 100%;
   text-align: center;
   font-size: clamp(2rem, 7vmin, 10rem);
-  background-color: red;
+  background-image: linear-gradient(
+    to right bottom,
+    rgb(238, 12, 12),
+    rgb(161, 6, 6)
+  );
   border: none;
   border-radius: 2rem;
   box-shadow: var(--box-shadow);
