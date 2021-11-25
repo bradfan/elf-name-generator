@@ -4,6 +4,7 @@ const firstNames = ['Sparkles', 'Cookie', 'Blinky', 'Evergreen', 'Jingle', 'Elfi
 const prefix = ['Mc', 'Mac', 'Von', 'Van', '', '', '', ''];
 const middleNames = ['Glitter', 'Twinkle', 'Sugar', 'Sleigh', 'Icy', 'Cinnamon', 'Tinsel', 'Toffee', 'Fluffy', 'Ginger', 'Snow', 'Ninny', 'Dingle', 'Joyful', 'Coal', 'Sweet', 'Syrupy', 'Sneezy', 'Chocolate', 'Pudding', 'Strudel', 'Blizzard', 'Polar', 'Autumn', 'Grinchy', 'Flaky', 'Midnight', 'Caramel', 'Dongle', 'Twizzle', 'Pumpkin', 'Gold', 'Silver', 'Red', 'Green'];
 const lastNames = ['balls', 'nose', 'frown', 'pants', 'shorts', 'toes', 'drawers', 'boots', 'bum', 'bells', 'jingles', 'nuts', 'berries', 'muggins', 'hair', 'giggles', 'bottoms', 'socks', 'stockings', 'belly', 'spice', 'nog', 'ribbon', 'glaze', 'muffins', 'cakes', 'pie', 'knickers', 'whiskers', 'whistle', 'fleece', 'whisper', 'skates', 'scrooge', 'kin', 'toys', 'banky', 'bam', 'skirt'];
+console.log('# of first:', firstNames.length, '# of second:', middleNames.length, '# of last:', lastNames.length)
 
 const caption = document.getElementById('image-container');
 const startOver = document.getElementById('refresh');
