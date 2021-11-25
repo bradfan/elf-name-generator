@@ -22,6 +22,7 @@ body {
   background-color: green;
   box-sizing: border-box;
   padding: var(--padding);
+  height:95vh;
 }
 
 .hidden {
