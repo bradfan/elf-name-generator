@@ -1,8 +1,9 @@
 "use strict";
 
-const firstNames = ['Sparkles', 'Cookie', 'Blinky', 'Evergreen', 'Jingle', 'Elfie', 'Buddy', 'Pixie', 'Cocoa', 'Frosty', 'Mistletoe', 'Twinkle', 'Peppermint', 'Cranberry', 'Snowflake', 'Kringle', 'Snowy', 'Holly', 'Jolly', 'Sprinkles', 'Happy', 'Tipsy', 'Glitzy', 'Starlight', 'Happy', 'Tinker'];
-const middleNames = ['Glitter', 'Twinkle', 'Sugar', 'Sleigh', "Mc", 'Icy', 'Cinnamon', 'Tinsel', 'Toffee', 'Fluffy', 'Ginger', 'Snow', 'Ninny', 'Dingle', 'Joyful', 'Coal'];
-const lastNames = ['balls', 'nose', 'frown', 'pants', 'shorts', 'toes', 'drawers', 'shoes', 'bum', 'bells', 'jingles', 'nuts', 'berries', 'muggins', 'hair', 'giggles', 'bottoms', 'socks', 'stockings', 'belly', ];
+const firstNames = ['Sparkles', 'Cookie', 'Blinky', 'Evergreen', 'Jingle', 'Elfie', 'Buddy', 'Pixie', 'Cocoa', 'Frosty', 'Mistletoe', 'Twinkle', 'Peppermint', 'Cranberry', 'Snowflake', 'Kringle', 'Snowy', 'Holly', 'Jolly', 'Sprinkles', 'Happy', 'Tipsy', 'Glitzy', 'Starlight', 'Happy', 'Tinker', 'Nutmeg', 'December', 'Winter', 'Frosting', 'Vanilla', 'Bobo', 'Binky', 'Swizzle', 'Snickers', 'Cuddles',];
+const prefix = ['Mc', 'Mac', 'Von', 'Van', '', '', '', ''];
+const middleNames = ['Glitter', 'Twinkle', 'Sugar', 'Sleigh', 'Icy', 'Cinnamon', 'Tinsel', 'Toffee', 'Fluffy', 'Ginger', 'Snow', 'Ninny', 'Dingle', 'Joyful', 'Coal', 'Sweet', 'Syrupy', 'Sneezy', 'Chocolate', 'Pudding', 'Strudel', 'Blizzard', 'Polar', 'Autumn', 'Grinchy', 'Flaky', 'Midnight', 'Caramel', 'Dongle', 'Twizzle', 'Pumpkin', 'Gold', 'Silver', 'Red', 'Green'];
+const lastNames = ['balls', 'nose', 'frown', 'pants', 'shorts', 'toes', 'drawers', 'boots', 'bum', 'bells', 'jingles', 'nuts', 'berries', 'muggins', 'hair', 'giggles', 'bottoms', 'socks', 'stockings', 'belly', 'spice', 'nog', 'ribbon', 'glaze', 'muffins', 'cakes', 'pie', 'knickers', 'whiskers', 'whistle', 'fleece', 'whisper', 'skates', 'scrooge', 'kin', 'toys', 'banky', 'bam', 'skirt'];
 
 const caption = document.getElementById('image-container');
 const startOver = document.getElementById('refresh');
@@ -12,6 +13,7 @@ document.querySelector('.image').addEventListener('click', function() {
   removeTitle.remove()
   const randomFirstName = () => Math.trunc((Math.random() * firstNames.length));
   const randomMiddleName = () => Math.trunc((Math.random() * middleNames.length));
+  const randomPrefix = () => Math.trunc((Math.random() * prefix.length));
   const randomLastName = () => Math.trunc((Math.random() * lastNames.length));
   let removeInput = document.getElementById('input');
   removeInput.remove();
@@ -23,7 +25,7 @@ document.querySelector('.image').addEventListener('click', function() {
   caption.append(image);
   let elfName = document.createElement('figcaption');
   elfName.setAttribute('class', 'elf-name');
-  elfName.innerHTML = `Merry Christmas <br>"${firstNames[randomFirstName()]} ${middleNames[randomMiddleName()]}${lastNames[randomLastName()]}!!"`
+  elfName.innerHTML = `Merry Christmas <br>"${firstNames[randomFirstName()]} ${prefix[randomPrefix()]}${middleNames[randomMiddleName()]}${lastNames[randomLastName()]}!!"`
   caption.append(elfName);
   let showBtn = document.getElementById('refresh');
   showBtn.classList.remove('hidden');
