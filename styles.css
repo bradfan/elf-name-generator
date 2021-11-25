@@ -124,9 +124,15 @@ body {
   position: relative;
   box-shadow: var(--box-shadow);
   border-radius: 50rem;
+  
 }
 
 .christmas-tree {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(44, 128, 44, 0.5),
+    rgba(41, 235, 12, 0.5)
+  );
   display: block;
   width: 100%;
   aspect-ratio: 3 / 2;
