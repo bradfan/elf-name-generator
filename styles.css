@@ -32,24 +32,20 @@ body {
   width: 100%;
   text-align: center;
   font-size: clamp(2rem, 7vmin, 10rem);
-  background-color:red;
+  background-color: red;
   border: none;
   border-radius: 2rem;
   box-shadow: var(--box-shadow);
-  /* padding: var(--padding); */
 }
-
-/* .title {
-  font-size: 10rem;
-} */
 
 .main {
   padding: var(--padding);
   position: relative;
   background-image: linear-gradient(
-      to right bottom,
-      rgba(44, 128, 44, 0.5),
-      rgba(41, 235, 12, 0.5));
+    to right bottom,
+    rgba(44, 128, 44, 0.5),
+    rgba(41, 235, 12, 0.5)
+  );
   box-shadow: var(--box-shadow);
   border-radius: 2rem;
 }
@@ -57,7 +53,6 @@ body {
 .input {
   text-align: center;
   padding: var(--padding);
-  
 }
 .click-below {
   text-align: center;
@@ -68,18 +63,17 @@ body {
 .anchor {
   padding: var(--padding);
   position: relative;
-  
 }
 
 .btn {
   padding: var(--padding);
 }
 
-.btn:hover {
+/* .btn:hover {
 }
 
 .btn-animated {
-}
+} */
 
 .image {
   margin: 0 auto;
@@ -96,18 +90,17 @@ body {
   transform: translate(-50%, -70%);
   color: white;
   text-transform: uppercase;
-  font-size: clamp(.75rem, 7vmin, 2rem);
+  font-size: clamp(0.75rem, 7vmin, 2rem);
   text-align: center;
-  transition: all .5s;
+  transition: all 0.5s;
   backface-visibility: hidden;
-  filter:brightness(200%)
+  filter: brightness(200%);
 }
-
 
 .image:hover {
   transform: scale(1.05) translateY(-0.5rem);
   box-shadow: 0 3rem 4rem rgba(0, 0, 0, 0.9);
-  filter: blur(.05rem) brightness(95%);
+  filter: blur(0.05rem) brightness(95%);
   transition: all 0.4s ease;
 }
 
@@ -122,7 +115,6 @@ body {
 }
 
 .image-container {
-  /* background-image: url(images/christmas-tree.jpg); */
   overflow: hidden;
   border: none;
   position: relative;
@@ -142,16 +134,17 @@ body {
 .refresh {
   padding: var(--padding);
   text-align: center;
-  margin-top:1rem;
+  margin-top: 1rem;
 }
+
 .btn-refresh {
   text-align: center;
   padding: var(--padding);
-  width:40%;
+  width: 40%;
   border: none;
-  border-radius:.5rem;
+  border-radius: 0.5rem;
   font-weight: 600;
-  font-size: clamp(.25rem, 7vmin, 2rem);
+  font-size: clamp(0.25rem, 7vmin, 2rem);
   background-color: red;
   box-shadow: var(--box-shadow);
   transition: all 0.4s ease;
@@ -162,5 +155,4 @@ body {
   transform: scale(1.05) translateY(-0.5rem);
   box-shadow: 0 3rem 4rem rgba(0, 0, 0, 0.9);
   transition: all 0.4s ease;
-  
 }

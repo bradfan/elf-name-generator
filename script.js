@@ -7,7 +7,6 @@ const lastNames = ['balls', 'nose', 'frown', 'pants', 'shorts', 'toes', 'drawers
 const caption = document.getElementById('image-container');
 const startOver = document.getElementById('refresh');
 
-
 document.querySelector('.image').addEventListener('click', function() {
   const removeTitle = document.getElementById('title');
   removeTitle.remove()
@@ -28,10 +27,9 @@ document.querySelector('.image').addEventListener('click', function() {
   caption.append(elfName);
   let showBtn = document.getElementById('refresh');
   showBtn.classList.remove('hidden');
-  
-
-  
+    
 })
+
 
 
 
