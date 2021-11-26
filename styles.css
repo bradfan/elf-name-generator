@@ -33,11 +33,6 @@ body {
   width: 100%;
   text-align: center;
   font-size: clamp(2rem, 7vmin, 10rem);
-  /* background-image: linear-gradient(
-    to right bottom,
-    rgb(238, 12, 12),
-    rgb(161, 6, 6)
-  ); */
   background-image: linear-gradient(
     to right bottom,
     rgba(44, 128, 44),
@@ -90,7 +85,7 @@ body {
   margin: 0 auto;
   border-radius: 50rem;
   box-shadow: var(--box-shadow);
-  width: 50%;
+  width: 70%;
   transition: all 0.4s ease;
 }
 
