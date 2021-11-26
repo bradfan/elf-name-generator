@@ -15,11 +15,11 @@
 html {
   font-size: 62.5%;
   /* sets 1rem to 10px */
-  font-family: Mountains of Christmas;
+  
 }
 
 body {
-  background-color: green;
+  background-color: rgb(235, 14, 14);
   box-sizing: border-box;
   padding: var(--padding);
   height:95vh;
@@ -33,10 +33,15 @@ body {
   width: 100%;
   text-align: center;
   font-size: clamp(2rem, 7vmin, 10rem);
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to right bottom,
     rgb(238, 12, 12),
     rgb(161, 6, 6)
+  ); */
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(44, 128, 44),
+    rgba(41, 235, 12)
   );
   border: none;
   border-radius: 2rem;
@@ -44,12 +49,13 @@ body {
 }
 
 .main {
+  margin-top: 1rem;
   padding: var(--padding);
   position: relative;
   background-image: linear-gradient(
     to right bottom,
-    rgba(44, 128, 44, 0.5),
-    rgba(41, 235, 12, 0.5)
+    rgba(44, 128, 44),
+    rgba(41, 235, 12)
   );
   box-shadow: var(--box-shadow);
   border-radius: 2rem;
@@ -136,7 +142,6 @@ body {
   );
   display: block;
   width: 100%;
-  aspect-ratio: 3 / 2;
   object-position: center;
   background-repeat: no-repeat;
   object-fit: cover;
@@ -156,7 +161,7 @@ body {
   border-radius: 0.5rem;
   font-weight: 600;
   font-size: clamp(0.25rem, 7vmin, 2rem);
-  background-color: red;
+  background-color:  rgb(235, 14, 14);
   box-shadow: var(--box-shadow);
   transition: all 0.4s ease;
   text-transform: capitalize;
