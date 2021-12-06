@@ -1,7 +1,7 @@
 "use strict";
 
-const firstNames = ['Sparkles', 'Cookie', 'Blinky', 'Evergreen', 'Jingle', 'Elfie', 'Buddy', 'Pixie', 'Cocoa', 'Frosty', 'Mistletoe', 'Twinkles', 'Peppermint', 'Cranberry', 'Snowflake', 'Kringle', 'Snowy', 'Holly', 'Jolly', 'Sprinkles', 'Alpine', 'Tipsy', 'Glitzy', 'Starlight', 'Bubbly', 'Tinker', 'Nutmeg', 'December', 'Winter', 'Frosting', 'Vanilla', 'Bobo', 'Binky', 'Swizzle', 'Snickers', 'Cuddles', 'Pudge', 'Nougat', 'Custard', 'Flash'];
-const prefix = ['', '', 'Mc', 'Von', '', ''];
+const firstNames = ['Sparkles', 'Cookie', 'Blinky', 'Evergreen', 'Jingle', 'Elfie', 'Buddy', 'Pixie', 'Cocoa', 'Frosty', 'Mistletoe', 'Twinkles', 'Peppermint', 'Cranberry', 'Snowflake', 'Kringle', 'Snowy', 'Holly', 'Jolly', 'Sprinkles', 'Alpine', 'Tipsy', 'Glitzy', 'Starlight', 'Bubbly', 'Tinker', 'Nutmeg', 'December', 'Winter', 'Frosting', 'Vanilla', 'Bobo', 'Binky', 'Swizzle', 'Snickers', 'Cuddles', 'Pudge', 'Nougat', 'Custard', 'Flash', 'Hug'];
+const prefix = ['', '', 'Mc', 'Von ', '', ''];
 const middleNames = ['Glitter', 'Twinkle', 'Sugar', 'Sleigh', 'Icy', 'Cinnamon', 'Tinsel', 'Toffee', 'Fluffy', 'Ginger', 'Snow', 'Ninny', 'Dingle', 'Joyful', 'Coal', 'Sweet', 'Syrupy', 'Sneezy', 'Chocolate', 'Puddin', 'Strudel', 'Blizzard', 'Polar', 'Autumn', 'Grinchy', 'Flaky', 'Midnight', 'Caramel', 'Dongle', 'Twizzle', 'Pumpkin', 'Gold', 'Silver', 'Red', 'Green', 'Happy', 'Windy', 'Shiver', 'Breezy', 'Dasher'];
 const lastNames = ['balls', 'nose', 'frown', 'pants', 'shorts', 'toes', 'drawers', 'boots', 'bum', 'bells', 'jingles', 'nuts', 'berries', 'muggins', 'hair', 'giggles', 'bottoms', 'plum', 'stockings', 'belly', 'spice', 'nog', 'ribbon', 'glaze', 'muffins', 'cakes', 'pie', 'knickers', 'whiskers', 'whistle', 'fleece', 'whisper', 'skates', 'scrooge', 'kin', 'toys', 'banky', 'bam', 'skirt', 'spirit'];
 console.log('# of first:', firstNames.length, '# of second:', middleNames.length, '# of last:', lastNames.length)
